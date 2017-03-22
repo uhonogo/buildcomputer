@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-744 3420.7 239.5 435" style="enable-background:new -744 3420.7 239.5 435;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3C3C3B;}
+	.st1{fill:#4C4C4C;}
+	.st2{fill:#878787;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#0068FF;}
+	.st5{fill:none;stroke:#3C3C3B;stroke-miterlimit:10;}
+</style>
+<g>
+	<polygon class="st0" points="-547.3,3420.7 -701.2,3420.7 -734.5,3453.5 -734.5,3803.2 -701.2,3837.3 -547.3,3837.3 -514,3803.2 
+		-514,3453.5 	"/>
+	<polygon class="st1" points="-624.2,3818.3 -688.5,3818.3 -688.5,3837.1 -624.2,3837.1 -560,3837.1 -560,3818.3 	"/>
+	<path class="st2" d="M-715.7,3822.5l-27.3,27.3c-2.2,2.2-0.6,5.9,2.5,5.9l0,0c1.8,0,3.6-0.7,4.8-2l25.5-25.5"/>
+	<path class="st2" d="M-532.8,3822.5l27.3,27.3c2.2,2.2,0.6,5.9-2.5,5.9l0,0c-1.8,0-3.6-0.7-4.8-2l-25.5-25.5"/>
+	<rect x="-701.2" y="3439.8" class="st3" width="153.9" height="378.5"/>
+	<g>
+		<polygon points="-702.2,3816.2 -723.9,3794.7 -723.9,3463.7 -702.2,3442.2 		"/>
+		<path class="st4" d="M-701.2,3818.6l-23.7-23.5v-331.9l23.7-23.5V3818.6z M-722.9,3794.3l19.7,19.5v-369.3l-19.7,19.5V3794.3z"/>
+	</g>
+	<g>
+		<polygon points="-546.3,3816.2 -524.5,3794.7 -524.5,3463.7 -546.3,3442.2 		"/>
+		<path class="st4" d="M-547.3,3439.8l23.7,23.5v331.9l-23.7,23.5C-547.3,3818.7-547.3,3439.8-547.3,3439.8z M-525.5,3464.1
+			l-19.7-19.5v369.3l19.7-19.5V3464.1z"/>
+	</g>
+	<line class="st5" x1="-701.2" y1="3681.3" x2="-547.3" y2="3681.3"/>
+</g>
+</svg>

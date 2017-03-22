@@ -1,0 +1,50 @@
+/*/ -- подсказка -- /*/
+
+.info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.inf-s {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	border: 1px solid black;
+	font-size: 16pt;
+	text-align: center;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	z-index: 3;
+}
+.inf-r {
+	color: #f8665c;
+	border: 1px solid #f8665c;
+}
+
+.infoblock {
+	top: -100%;
+	opacity: 0;
+}
+
+.infb {
+	top: 0;
+	opacity: 1;
+}
+
+.infb,
+.infoblock {
+	width:  100%;
+	height: 100%;
+	text-align: justify;
+	font-size: 15pt;
+	padding: 15% 20px;
+	z-index: 2;
+	color: white;
+	background: rgba(0, 0, 0, .8);
+}
