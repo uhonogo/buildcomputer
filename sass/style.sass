@@ -20,6 +20,7 @@ body
 
 .about-item>p,
 header,
+.head,
 section,
 section div,
 footer,
@@ -76,28 +77,27 @@ section div,
 footer
 	background: $col
 // ШАПКА //
-
+header 
+	width: 100%
+	height: 100vh
+	position: relative
 .head-img
-	z-index: 1
-	height: 100vh !important
+	position: fixed
+	top: 0
+	height: 100%
 	width: 100% !important
-	background: url('../images/pcb-2.jpg') 50% 50% fixed no-repeat
+	background: url('../images/pcb-2.jpg') 50% 50% no-repeat
 	background-size: 100% auto
+	z-index: 1
 
 .head
 	height: 100vh
+	min-height: 800px
 	padding: 30px
+	position: relative
 	overflow: hidden
 	background: rgba(0,0,0, .3)
 	z-index: 2
-
-.head,
-.head-img
-	width: 100%
-	min-height: 100vh !important
-	height: auto !important
-.head-img
-	z-index: 9
 
 .width
 	width: 80%
@@ -293,6 +293,7 @@ h2 a
 
 section
 	height: 100vh
+	min-height: 800px
 	padding: 30px 0
 	overflow: hidden
 	background: white
