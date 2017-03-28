@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+San|Roboto|Ubuntu:300");
+
 body {
   margin: 0;
   padding: 0;
   background: none;
   font-size: 18pt;
-  font-family: "Ubuntu" !important; }
+  font-family: "Ubuntu", "Roboto" !important;
+  font-weight: 300; }
 
 .about-item > p,
 header,

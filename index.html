@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
-	<title>pcbuild</title>
+	<title>pcBuild</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="sass/style.css">
 	<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
-	<link rel="stylesheet" type="text/css" href="sass/infoblock.css">
-	<link rel="stylesheet" type="text/sass" href="sass/style.sass">
+
 	<link rel="stylesheet" type="text/css" href="css/buy.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<!-- fonts -->
+
+	<style>
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/Roboto/Roboto-Light.ttf');
+			font-weight: 300;
+		}
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/Roboto/Roboto-Thin.ttf');
+			font-weight: 100;
+		}
+		@font-face {
+			font-family: 'Ubuntu';
+			src: url('fonts/Ubuntu/Ubuntu-Light.ttf');
+			font-weight: 300;
+		}
+	</style>
+
 </head>
 <body>
 	
@@ -17,7 +45,7 @@
 		</div>
 		<div class="head">
 			<div class="logo">
-				<img src="images/logo.svg" alt="">
+				<img src="images/logo.svg" alt="logo">
 			</div>
 			
 			<article>
@@ -398,64 +426,16 @@
 
 	<footer><a>about me</a></footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.waypoints.js"></script>
-		<script src="js/tabs.js"></script>
-		<script src="js/animate.js"></script>
-		<script src="js/hamb-menu.js"></script>
-		<script src="js/parallax.js"></script>
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<script type="text/javascript">
-			function setHeiHeight() {
-    		$('#hm').css({
-        	height: $(window).height() + 'px'
-    		});
-			setHeiHeight(); // устанавливаем высоту окна при 	первой загрузке страницы
-			$(window).resize( setHeiHeight ); };// обновляем при изменении размеров окна
-		</script>
-		<script>
-			jQuery(document).ready(function(){
-			// fade in #back-top
-			$(function () {
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 200) {
-						$('#lg').addClass('height');
-					} else {
-						$('#lg').removeClass('height');
-					}
-				});
+		<script defer src="js/documentScripts.js"></script>
+
+		<script defer type="text/javascript" src="js/jquery.waypoints.js"></script>
+		<script defer src="js/tabs.js"></script>
+		<script defer src="js/animate.js"></script>
+		<script defer src="js/hamb-menu.js"></script>
+		<script defer src="js/parallax.js"></script>
 		
-			});
-		 
-		});
-		</script>
 
-		<script type="text/javascript">
-			$(document).ready(function(){
-			    $(".item").on("click","a", function (event) {
-			        event.preventDefault();
-			        var id  = $(this).attr('href'),
-			            top = $(id).offset().top;
-			        $('body,html').animate({scrollTop: top}, 1000);
-			    });
-			});
-		</script>
-		<script>
-  			$('#info').click(function(e){
-			  e.preventDefault();
-			  	$(this).toggleClass('inf-r');
-			  	$('#infb').toggleClass('infb');
-			
-			});
-			$(document).click(function(e) {
-			
-		    if ($(e.target).closest("#info").length) return;
-		            $('#info').removeClass('inf-r');
-
-		            $('#infb').removeClass('infb');
-		            indexClick = 0;
-		    e.stopPropagation();
-		});
-  		</script>
 	</body>
 </html>
