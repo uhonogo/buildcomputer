@@ -1,4 +1,4 @@
-body{margin:0;padding:0;background:none;font-size:18pt;font-family:"Ubuntu","Roboto"!important;font-weight:300}
+body{margin:0;padding:0;background:none;font-size:18pt;font-family:"Ubuntu","Roboto",sans-serif!important;font-weight:300}
 .about-item > p,header,.head,section,section div,footer,#lg,.tabNavigation,article{position:relative;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box}
 ul{margin:0;padding:0;list-style-type:none}
 a,li{text-decoration:none}
@@ -8,9 +8,9 @@ h2{height:60px;margin:0 0 30px}
 div img{width:100%;display:block}
 .visible,.show-hide,.item,a,.processo,.processor,.lr,.ll,.screws,.mobile-menu,section div,.sid,.height img,#lg img{transition:.2s ease-in-out;-webkit-transition:.2s ease-in-out;-moz-transition:.2s ease-in-out;-ms-transition:.2s ease-in-out;-o-transition:.2s ease-in-out}
 footer{background:#376782}
-header{width:100%;height:100vh;min-height:800px;position:relative}
+header{width:100%;height:100vh;min-height:570px;position:relative}
 .head-img{position:fixed;top:0;height:100%;min-height:800px;width:100%!important;background:url(../images/pcb-2.jpg) 50% 50% no-repeat;background-size:100% auto;z-index:1}
-.head{height:100%;min-height:800px;padding:30px;position:relative;overflow:hidden;background:rgba(0,0,0,0.3);z-index:2}
+.head{height:100%;min-height:570px;padding:30px;position:relative;overflow:hidden;background:rgba(0,0,0,0.3);z-index:2}
 .width{width:80%;height:100%;margin:0 auto}
 .logo{width:250px}
 article{position:absolute;text-align:justify;width:80%;top:40%;padding:65px;left:10%;color:#fff;font-size:20pt}
@@ -229,7 +229,7 @@ h2{height:auto}
 footer{position:relative}
 }
 @media screen and (min-width: 400px) and (max-width: 699px) {
-article{top:10vh!important}
+article{margin-top:10vh!important;top:0;}
 }
 @media screen and (min-width: 545px) and (max-width: 650px) {
 article{font-size:14pt}
