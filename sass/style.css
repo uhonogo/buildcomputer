@@ -1,5 +1,5 @@
 body{margin:0;padding:0;background:none;font-size:18pt;font-family:"Ubuntu","Roboto",sans-serif!important;font-weight:300}
-.about-item > p,header,.head,section,section div,footer,#lg,.tabNavigation,article{position:relative;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box}
+.about-item > p,header,.head,section,section div,footer,#lg,.tabNavigation,.article{position:relative;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box}
 ul{margin:0;padding:0;list-style-type:none}
 a,li{text-decoration:none}
 p{text-align:center}
@@ -13,7 +13,7 @@ header{width:100%;height:100vh;min-height:570px;position:relative}
 .head{height:100%;min-height:570px;padding:30px;position:relative;overflow:hidden;background:rgba(0,0,0,0.3);z-index:2}
 .width{width:80%;height:100%;margin:0 auto}
 .logo{width:250px}
-article{position:absolute;text-align:justify;width:80%;top:40%;padding:65px;left:10%;color:#fff;font-size:20pt}
+.article{position:absolute;text-align:justify;width:80%;top:40%;padding:65px;left:10%;color:#fff;font-size:20pt}
 .menu{position:fixed;right:0;top:0;height:auto;box-sizing:content-box;z-index:99}
 .butnmen{width:320px}
 .menu-item{color:rgba(0,0,0,0.6);font-family:"Ubuntu";font-size:15pt}
@@ -43,17 +43,17 @@ article{position:absolute;text-align:justify;width:80%;top:40%;padding:65px;left
 .hamburger{right:10%;border:2px solid #e5e5e5}
 .hamburger-box{width:100%;height:24px;display:inline-block;position:relative}
 .hamburger-inner{display:block;top:50%;margin-top:-2px}
-.hamburger-inner,.hamburger-inner::before,.hamburger-inner:::after{width:30px;height:2px;background-color:#000;border-radius:2px;position:absolute;left:calc(50% - 15px);transition-property:transform;transition-duration:.15s;transition-timing-function:ease}
-.hamburger:hover .hamburger-inner::before,.hamburger:hover .hamburger-inner,.hamburger:hover .hamburger-inner:::after,.left:hover .hamburger-inner::before,.left:hover .hamburger-inner,.left:hover .hamburger-inner:::after{background:#f8665c!important}
-.hamburger-inner::before,.hamburger-inner:::after{content:"";display:block}
+.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after{width:30px;height:2px;background-color:#000;border-radius:2px;position:absolute;left:calc(50% - 15px);transition-property:transform;transition-duration:.15s;transition-timing-function:ease}
+.hamburger:hover .hamburger-inner::before,.hamburger:hover .hamburger-inner,.hamburger:hover .hamburger-inner::after,.left:hover .hamburger-inner::before,.left:hover .hamburger-inner,.left:hover .hamburger-inner::after{background:#f8665c!important}
+.hamburger-inner::before,.hamburger-inner::after{content:"";display:block}
 .hamburger-inner::before{top:-10px}
-.hamburger-inner:::after{bottom:-10px}
+.hamburger-inner::after{bottom:-10px}
 .hamburger--squeeze .hamburger-inner{transition-duration:.1s;transition-timing-function:cubic-bezier(0.55,0.055,0.675,0.19)}
 .hamburger--squeeze .hamburger-inner::before{transition:top .1s .14s ease,opacity .1s ease}
-.hamburger--squeeze .hamburger-inner:::after{transition:bottom .1s .14s ease,transform .1s cubic-bezier(0.55,0.055,0.675,0.19)}
+.hamburger--squeeze .hamburger-inner::after{transition:bottom .1s .14s ease,transform .1s cubic-bezier(0.55,0.055,0.675,0.19)}
 .hamburger--squeeze.is-active .hamburger-inner{transform:rotate(45deg);transition-delay:.14s;transition-timing-function:cubic-bezier(0.215,0.61,0.355,1)}
 .hamburger--squeeze.is-active .hamburger-inner::before{top:0;opacity:0;transition:top .1s ease,opacity .1s .14s ease}
-.hamburger--squeeze.is-active .hamburger-inner:::after{bottom:0;transform:rotate(-90deg);transition:bottom .1s ease,transform .1s .14s cubic-bezier(0.215,0.61,0.355,1)}
+.hamburger--squeeze.is-active .hamburger-inner::after{bottom:0;transform:rotate(-90deg);transition:bottom .1s ease,transform .1s .14s cubic-bezier(0.215,0.61,0.355,1)}
 .height{width:250px;height:180px;top:40px;left:calc(50% - 125px);overflow:hidden}
 #lg img{position:absolute;top:-100%}
 #lg{width:60%;top:5%;left:20%}
@@ -83,7 +83,7 @@ to{opacity:1;bottom:0;animation-timing-function:ease-in-out}
 }
 .selected,.selected:hover{width:100%;display:block;position:relative;color:red!important;animation-fill-mode:forwards!important;animation:to-r .4s alternate}
 .selected::after{width:0;height:0;content:'';display:block;position:absolute;right:-1px;top:calc(50% - 14px);border-top:14px solid transparent;border-right:17px solid #fff;border-bottom:14px solid transparent}
-.selected:before{width:0;height:0;content:'';display:block;position:absolute;right:-1px;top:calc(50% - 15px);border-top:15px solid transparent;border-right:18px solid #000;border-bottom:15px solid transparent}
+.selected::before{width:0;height:0;content:'';display:block;position:absolute;right:-1px;top:calc(50% - 15px);border-top:15px solid transparent;border-right:18px solid #000;border-bottom:15px solid transparent}
 @keyframes to-r {
 from{padding-left:15px;animation-timing-function:ease-in-out}
 to{padding-left:50px;animation-timing-function:ease-in-out}
@@ -194,8 +194,8 @@ section,.head,header{min-height:570px;height:auto}
 .menu-item{display:block;width:100%;font-size:12pt}
 #lg{width:60%;top:5px;left:20%}
 #lg img{top:0}
-article{width:100%;height:auto;padding:5px;font-size:14pt;position:relative;top:30%;left:0}
-article p{text-align:justify}
+.article{width:100%;height:auto;padding:5px;font-size:14pt;position:relative;top:30%;left:0}
+.article p{text-align:justify}
 h2 a{font-size:16pt}
 h2{height:auto}
 .tabNavigation,.tabs div{float:none!important}
@@ -229,14 +229,14 @@ h2{height:auto}
 footer{position:relative}
 }
 @media screen and (min-width: 400px) and (max-width: 699px) {
-article{margin-top:10vh!important;top:0;}
+.article{margin-top:10vh!important;top:0;}
 }
 @media screen and (min-width: 545px) and (max-width: 650px) {
-article{font-size:14pt}
+.article{font-size:14pt}
 .va{width:90%;height:auto!important;left:5%;margin:0;padding:0;position:absolute;bottom:20px}
 }
 @media screen and (min-width: 650px) and (max-width: 700px) {
-article{font-size:17pt}
+.article{font-size:17pt}
 .va{width:86%;height:auto!important;left:7%;margin:0;padding:0;position:absolute;bottom:40px}
 }
 @media screen and (max-height: 605px) {
@@ -251,8 +251,8 @@ section{z-index:3;height:70vh;height:auto!important}
 .menu-item{display:block;width:100%;font-size:12pt}
 #lg{width:60%;top:5px;left:20%}
 #lg img{top:0}
-article{width:100%;height:auto;padding:5px;position:relative;left:0}
-article p{text-align:justify}
+.article{width:100%;height:auto;padding:5px;position:relative;left:0}
+.article p{text-align:justify}
 h2 a{font-size:16pt}
 h2{height:auto}
 .tabNavigation,.tabs div{float:none!important}
@@ -307,8 +307,8 @@ section{height:100vh}
 #lg{width:60%;top:5px;left:20%}
 #lg img{top:0}
 .tabNavigation{width:30%!important}
-article{font-size:17pt;width:80%;padding:0;height:auto;position:absolute;left:10%;top:30%!important}
-article p{text-align:justify}
+.article{font-size:17pt;width:80%;padding:0;height:auto;position:absolute;left:10%;top:30%!important}
+.article p{text-align:justify}
 h2 a{font-size:16pt}
 h2{height:auto}
 .va{width:80%;left:10%}
@@ -395,8 +395,8 @@ h2 a{font-size:18pt}
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 .head-img{background-size:cover}
-article{width:95%;font-size:18.5pt;left:2.5%}
-article p{text-align:justify}
+.article{width:95%;font-size:18.5pt;left:2.5%}
+.article p{text-align:justify}
 .width h2{margin:0;height:10%}
 .content{height:90%;padding-top:10%}
 .width{width:90%}
