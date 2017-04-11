@@ -299,9 +299,10 @@ h2{height:auto}
 @media screen and (min-width: 700px) and (max-width: 1024px) {
 body,.main-had,.section-content1,.content{width:100%!important}
 .width{width:100%}
-.head-img{background-size:cover}
+header{min-height:800px;}
+.head-img{background-size:cover;}
 section{height:100vh}
-.head,.head-img{width:100%;height:100%;min-height:800px}
+.head,.head-img{width:100%;height:100%;min-height:800px;}
 .logo{left:10px;width:200px}
 .menu-item{display:block;width:100%;font-size:12pt}
 #lg{width:60%;top:5px;left:20%}
@@ -394,7 +395,7 @@ h2 a{font-size:18pt}
 .column{padding:4%}
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-.head-img{background-size:cover}
+.head-img{background-size:auto 100%}
 .article{width:95%;font-size:18.5pt;left:2.5%}
 .article p{text-align:justify}
 .width h2{margin:0;height:10%}
@@ -444,9 +445,15 @@ h2 a{font-size:18pt}
 .hd{top:-70px}
 .hdd{top:-15px}
 .hdd-slot,.hdd-slo{top:-31px}
-.column{padding:4%}
+.column{padding:4%;}
 }
-@media screen and (min-width: 1281px) and (max-width: 1500px) {
+@media screen and (min-height: 1400px) {
+header{min-height:800px;}
+.head-img{background-size:100% auto;}
+}
+@media screen and (min-width: 1251px) and (max-width: 1500px) {
+header{min-height:800px;}
+.head-img{-webkit-background-size:100% 100%;background-size:100% 100%;-webkit-background-size: cover;background-size: cover;}
 .width{width:90%}
 .tabs{height:650px!important}
 .tabNavigation{width:27%!important}
